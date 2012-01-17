@@ -1,8 +1,6 @@
 require 'rubygems'
 require 'bundler'
-Bundler.setup
-
-require 'bloops'
+Bundler.require(:default)
 
 # zelda's lullaby
   b = Bloops.new
@@ -12,7 +10,7 @@ require 'bloops'
   ocarina         = b.sound Bloops::SINE
   ocarina.sustain = 1
 
-# the melody
+# the melody (unfinished && needs refactoring)
   b.tune ocarina,
     "2e4 4g4 2d4 8c4 8d4 2e4 4g4 2d4 3 " +
     "2e4 4g4 2d5 4c5 2g4 8f4 8e4 2d4"

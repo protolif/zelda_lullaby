@@ -1,2 +1,2 @@
 source :rubygems
-gem 'bloopsaphone'
+gem 'bloopsaphone', :require => 'bloops'
